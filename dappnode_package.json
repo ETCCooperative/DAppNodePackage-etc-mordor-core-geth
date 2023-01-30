@@ -1,0 +1,39 @@
+{
+  "name": "etc-core-geth.public.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "version-1.12.9",
+  "upstreamRepo": "etclabscore/core-geth",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "shortDescription": "Core-geth client on ETC Classic by ETCCooperative",
+  "description": "Ethereum Classic is a decentralized platform that runs smart contracts applications that can be run exactly as programmed without any possibility of downtime, censorship, or third party interference. This packages deploys a node for the Ethereum Classic mainnet.",
+  "type": "library",
+  "chain": "ethereum",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "architectures": ["linux/amd64"],
+  "contributors": [
+    "Chris Ziogas <chris@etccooperative.org> (https://github.com/ziogaschr)",
+    "Isaac Ardis <isaac@etccooperative.org> (https://github.com/meowsbits)"
+  ],
+  "categories": ["Blockchain"],
+  "license": "GPL-3.0",
+  "mainService": "geth",
+  "links": {
+    "api": "http://etc-core-geth.dappnode:8545",
+    "homepage": "https://github.com/dappnode/DAppNodePackage-etc-core-geth#readme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dappnode/DAppNodePackage-etc-core-geth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dappnode/DAppNodePackage-etc-core-geth/issues"
+  },
+  "exposable": [
+    {
+      "name": "Core-geth JSON RPC",
+      "description": "JSON RPC endpoint for ETC mainnet",
+      "serviceName": "geth",
+      "port": 8545
+    }
+  ]
+}
