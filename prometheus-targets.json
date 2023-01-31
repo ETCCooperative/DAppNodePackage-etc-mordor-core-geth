@@ -1,0 +1,12 @@
+[
+  {
+      "labels": {
+          "package": "etc-core-geth.public.dappnode.eth",
+          "service": "etc-core-geth.dappnode",
+          "__metrics_path__": "/debug/metrics/prometheus"
+      },
+      "targets": [
+          "etc-core-geth.dappnode:6060"
+      ]
+  }
+]
