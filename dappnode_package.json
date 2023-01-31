@@ -4,7 +4,7 @@
   "upstreamVersion": "version-1.12.9",
   "upstreamRepo": "etclabscore/core-geth",
   "upstreamArg": "UPSTREAM_VERSION",
-  "shortDescription": "Core-geth client on ETC Classic by ETCCooperative",
+  "shortDescription": "Core-geth client on Ethereum Classic by ETC Cooperative",
   "description": "Ethereum Classic is a decentralized platform that runs smart contracts applications that can be run exactly as programmed without any possibility of downtime, censorship, or third party interference. This packages deploys a node for the Ethereum Classic mainnet.",
   "type": "library",
   "chain": "ethereum",
