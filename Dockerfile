@@ -4,7 +4,7 @@ FROM etclabscore/core-geth:${UPSTREAM_VERSION}
 
 ENTRYPOINT []
 CMD geth \
-    --classic \
+    --mordor \
     --port=$P2P_PORT \
     --http \
     --http.addr=0.0.0.0 \

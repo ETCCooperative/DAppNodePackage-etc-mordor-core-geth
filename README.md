@@ -1,6 +1,6 @@
-# Core-Geth DAppNode package for ETC Mainnet
+# Core-geth client on Ethereum Classic Mordor testnet for DAppNode by ETC Cooperative
 
-[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.dappnode/#/installer/etc-core-geth.public.dappnode.eth)
+[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.dappnode/#/installer/etc-mordor-core-geth.public.dappnode.eth)
 
 [![Core-Geth github](https://img.shields.io/badge/Core--Geth-Github-blue.svg)](https://github.com/etclabscore/core-geth)
 
@@ -62,7 +62,7 @@ For enabling tracing API on a full archive node you can add:
 If the package is running and you're connected to your dappnode you can use:
 ```
 var Web3 = require('web3');
-var web3 = new Web3('ws://etc-core-geth.dappnode:8546')
+var web3 = new Web3('ws://etc-mordor-core-geth.dappnode:8546')
 web3.eth.getBlockNumber().then(console.log)
 ```
 In case you are running it locally:

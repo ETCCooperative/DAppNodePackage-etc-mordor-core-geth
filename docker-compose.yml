@@ -1,20 +1,20 @@
 version: "3.5"
 services:
-  etc-core-geth.public.dappnode.eth:
-    image: "etc-core-geth.public.dappnode.eth:0.1.0"
+  etc-mordor-core-geth.public.dappnode.eth:
+    image: "etc-mordor-core-geth.public.dappnode.eth:0.1.0"
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v1.12.9
+        UPSTREAM_VERSION: v1.12.10
     volumes:
       - "data:/root/.ethereum"
     environment:
       - "EXTRA_OPTS=--http.api eth,net,web3,txpool"
       - SYNCMODE=snap
-      - P2P_PORT=30913
+      - P2P_PORT=30933
     ports:
-      - "30913:30913/udp"
-      - "30913:30913/tcp"
+      - "30933:30933/udp"
+      - "30933:30933/tcp"
     restart: unless-stopped
 volumes:
   data: {}
