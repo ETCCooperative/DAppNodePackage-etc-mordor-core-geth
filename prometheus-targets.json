@@ -2,11 +2,11 @@
   {
       "labels": {
           "package": "etc-mordor-core-geth.public.dappnode.eth",
-          "service": "etc-mordor-core-geth.dappnode",
+          "service": "etc-mordor-core-geth.public.dappnode",
           "__metrics_path__": "/debug/metrics/prometheus"
       },
       "targets": [
-          "etc-mordor-core-geth.dappnode:6060"
+          "etc-mordor-core-geth.public.dappnode:6060"
       ]
   }
 ]
