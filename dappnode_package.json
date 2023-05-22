@@ -4,7 +4,7 @@
   "upstreamVersion": "v1.12.11",
   "upstreamRepo": "etclabscore/core-geth",
   "upstreamArg": "UPSTREAM_VERSION",
-  "shortDescription": "Core-geth client on Ethereum Classic Mordor testnet by ETC Cooperative",
+  "shortDescription": "Core-geth client on ETC Mordor testnet by ETC Cooperative",
   "description": "Ethereum Classic is a decentralized platform that runs smart contracts applications that can be run exactly as programmed without any possibility of downtime, censorship, or third party interference. This packages deploys a node for the Ethereum Classic Mordor testnet.",
   "type": "library",
   "chain": "ethereum",
