@@ -14,7 +14,7 @@ jobs:
     name: Build test
     if: github.event_name != 'push'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: "18"
       - run: npx @dappnode/dappnodesdk build --skip_save
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: "18"
       - name: Publish
