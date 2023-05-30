@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-      - run: npx @dappnode/dappnodesdk@v0.2.99 build --skip_save
+      - run: npx @dappnode/dappnodesdk@latest build --skip_save
 
   release:
     name: Release
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: "18"
       - name: Publish
-        run: npx @dappnode/dappnodesdk@v0.2.99 publish patch --dappnode_team_preset
+        run: npx @dappnode/dappnodesdk@latest publish patch --dappnode_team_preset
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEVELOPER_ADDRESS: "0xf35960302a07022aba880dffaec2fdd64d5bf1c1"
